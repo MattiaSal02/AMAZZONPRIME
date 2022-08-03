@@ -32,7 +32,7 @@ public class UTENTI
     public bool Abbonamento()
     {
         SqlCommand cmd = new SqlCommand("UTENTI_ABBONAMENTO");
-        cmd.Parameters.AddWithValue("@usr", usr);
+        cmd.Parameters.AddWithValue("@codUtente", codUtente);
 
         CONNESSIONE c = new CONNESSIONE();
         DataTable dt = c.EseguiSelect(cmd);
@@ -54,6 +54,15 @@ public class UTENTI
     public DataTable Select()
     {
         SqlCommand cmd = new SqlCommand("UTENTI_SELECTALL");
+        CONNESSIONE C = new CONNESSIONE();
+
+        return C.EseguiSelect(cmd);
+    }
+    public DataTable SelectOne()
+    {
+        SqlCommand cmd = new SqlCommand("UTENTI_SELECTONE");
+        cmd.Parameters.AddWithValue("@codUtente", codUtente);
+
         CONNESSIONE C = new CONNESSIONE();
 
         return C.EseguiSelect(cmd);
@@ -89,4 +98,5 @@ public class UTENTI
         CONNESSIONE conn = new CONNESSIONE();
         conn.EseguiCmd(cmd);
     }
+
 }
