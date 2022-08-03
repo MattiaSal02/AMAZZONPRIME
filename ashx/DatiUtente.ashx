@@ -17,7 +17,9 @@ public class DatiUtente : IHttpHandler
         }
 
         int codUtente = (int)context.Session["CodUtente"];
-        string risposta = new UTENTI.SelectOne(codUtente).Rows[0]["abbonamento"].ToString();
+        UTENTI u = new UTENTI();
+        u.codUtente = codUtente;
+        string risposta = new UTENTI().SelectOne().Rows[0]["abbonamento"].ToString();
         context.Response.Write(risposta);
     }
 
