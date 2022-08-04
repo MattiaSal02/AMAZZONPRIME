@@ -25,7 +25,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav me-auto mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="Home.aspx">Home</a>
+                            <a runat="server" id="home" class="nav-link active" aria-current="page" href="Home.aspx">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="ListaVideo.aspx">Video</a>
@@ -37,6 +37,8 @@
                             <asp:Button ID="btnSubscribe" runat="server" Text="Abbonati" ClientIDMode="Static" CssClass="btn btn-secondary" Visible="False" OnClick="btnSubscribe_Click" />
                         </li>
                     </ul>
+                        <asp:Button CssClass="btn btn-lg btn-secondary" ID="Button1" runat="server" Text="Esci" OnClick="Button1_Click" />
+
                 </div>
             </div>
         </nav>
