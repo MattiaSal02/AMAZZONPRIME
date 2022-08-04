@@ -1,15 +1,15 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Registrazione.aspx.cs" Inherits="Registrazione" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-     <title></title>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
+    <title></title>
     <link href="css/styleLogin-registrazione.css" rel="stylesheet" />
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <!------ Include the above in your HEAD tag ---------->
-          
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    <div style="background-image: url('img/Prime1.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-position: left;">
         <div class="wrapper fadeInDown">
             <div id="formContent">
                 <!-- Tabs Titles -->
@@ -25,7 +25,7 @@
                     <asp:TextBox ID="txtPasswordRegistrazione" class="fadeIn third" runat="server" placeholder="password" TextMode="Password"></asp:TextBox>
                     <asp:Button ID="btnRegistrazione" class="fadeIn fourth" runat="server" Text="Registrati" OnClick="btnRegistrazione_Click" />
 
-               </div>
+                </div>
 
                 <!-- link Regiistrazione -->
                 <div id="formFooter">
@@ -34,5 +34,6 @@
 
             </div>
         </div>
+    </div>
 </asp:Content>
 
