@@ -24,16 +24,13 @@
                 <div class="carousel-inner">
                     <%-- Le immagini saranno selezionate casualmente dal DB, e verrà loro assegnato un src e alt --%>
                     <div class="carousel-item active">
-                        <a href="..." id="a1" runat="server">
-                            <img src="#" class="d-block" alt="#" id="i1" runat="server" /></a>
+                            <img src="#" class="d-block" alt="#" id="i1" runat="server" />
                     </div>
                     <div class="carousel-item">
-                        <a href="..." id="a2" runat="server">
-                            <img src="#" class="d-block" alt="#" id="i2" runat="server" /></a>
+                            <img src="#" class="d-block" alt="#" id="i2" runat="server" />
                     </div>
                     <div class="carousel-item">
-                        <a href="..." id="a3" runat="server">
-                            <img src="#" class="d-block" alt="#" id="i3" runat="server" /></a>
+                            <img src="#" class="d-block" alt="#" id="i3" runat="server" />
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

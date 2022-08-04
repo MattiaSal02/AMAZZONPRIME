@@ -19,6 +19,10 @@ public partial class MasterPage : System.Web.UI.MasterPage
             {
                 btnSubscribe.Visible = true;
             }
+            else
+            {
+                btnSubscribe.Visible = false;
+            }
 
             if (Session["TipoUtente"].ToString() == "a")
             {

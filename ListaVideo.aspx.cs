@@ -35,19 +35,19 @@ public partial class _Default : System.Web.UI.Page
         DataRow v3 = dt.Rows[dt.Rows.Count - 3];
 
         // Imposta il carosello per mostrare gli ultimi tre video
-        a1.HRef = v1.Field<string>("link");
+        //a1.HRef = v1.Field<string>("link");
         i1.Alt = v1.Field<string>("nome");
         byte[] arr1 = v1.Field<byte[]>("immagine");
         string base64String1 = Convert.ToBase64String(arr1, 0, arr1.Length);
         i1.Src = "data:image/jpg;base64," + base64String1;
 
-        a2.HRef = v2.Field<string>("link");
+        //a2.HRef = v2.Field<string>("link");
         i2.Alt = v2.Field<string>("nome");
         byte[] arr2 = v2.Field<byte[]>("immagine");
         string base64String2 = Convert.ToBase64String(arr2, 0, arr2.Length);
         i2.Src = "data:image/jpg;base64," + base64String2;
 
-        a3.HRef = v3.Field<string>("link");
+        //a3.HRef = v3.Field<string>("link");
         i3.Alt = v3.Field<string>("nome");
         byte[] arr3 = v3.Field<byte[]>("immagine");
         string base64String3 = Convert.ToBase64String(arr3, 0, arr3.Length);
