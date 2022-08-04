@@ -51,12 +51,12 @@ $(function () {
                             alert("Esegui il login per guardare video");
                         })
                         break;
-                    case 'true':
+                    case 'True':
                         $('.card:last-child').click(function () {
                             window.location.href = link;
                         })
                         break;
-                    case 'false':
+                    case 'False':
                         $('.card:last-child').click(function () {
                             alert("Abbonati per guardare video");
                         })
