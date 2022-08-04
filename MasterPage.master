@@ -34,7 +34,7 @@
                             <a class="nav-link" href="Video.aspx">Gestione Video</a>
                         </li>
                         <li class="nav-item">
-                            <asp:Button ID="btnSubscribe" runat="server" Text="Iscriviti" ClientIDMode="Static" CssClass="btn btn-secondary" Visible="False" OnClick="btnSubscribe_Click" />
+                            <asp:Button ID="btnSubscribe" runat="server" Text="Abbonati" ClientIDMode="Static" CssClass="btn btn-secondary" Visible="False" OnClick="btnSubscribe_Click" />
                         </li>
                     </ul>
                 </div>

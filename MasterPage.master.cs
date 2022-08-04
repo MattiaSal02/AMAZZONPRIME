@@ -37,5 +37,6 @@ public partial class MasterPage : System.Web.UI.MasterPage
         U.codUtente = int.Parse(Session["codUtente"].ToString());
 
         U.Iscritto();
+        btnSubscribe.Visible = false;
     }
 }
