@@ -41,6 +41,9 @@ $(function () {
                 // metto fascetta se non incluso
                 if (incluso === 'false') {
                     $('.card:last-child').append($('<div class="fascetta">€</div>'))
+                    $('.card:last-child').click(function () {
+                        alert("Acquista questo film per poterlo guardare!");
+                    })
                     return;
                 }
 
