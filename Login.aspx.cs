@@ -11,11 +11,10 @@ public partial class Login : System.Web.UI.Page
     {
 
     }
-
     protected void btnLogin_Click(object sender, EventArgs e)
     {
         //Controlli formali
-        if(string.IsNullOrEmpty(txtUser.Text) || (string.IsNullOrEmpty(txtPassword.Text)))
+        if (string.IsNullOrEmpty(txtUser.Text) || (string.IsNullOrEmpty(txtPassword.Text)))
         {
             ScriptManager.RegisterClientScriptBlock(this, GetType(), "Dati non validi", "alert('Compilare tutti i campi')", true);
             return;
@@ -25,13 +24,13 @@ public partial class Login : System.Web.UI.Page
         string usr = txtUser.Text.Trim();
         string pwd = CRYPTA.Crypta(txtPassword.Text);
 
-        UTENTI u = new UTENTI(usr,pwd);
-        
-        
+        UTENTI u = new UTENTI(usr, pwd);
+
+
         //Controllo il Login
-        if(!u.Login())
+        if (!u.Login())
         {
-            ScriptManager.RegisterClientScriptBlock(this, GetType(), "Dati non validi", "alert('Dati non validi')", true);
+            ScriptManager.RegisterClientScriptBlock(this, GetType(), "Dati non corretti", "alert('Riprova')", true);
             return;
         }
 

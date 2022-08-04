@@ -1,45 +1,40 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Login.aspx.cs" Inherits="Login" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     <title></title>
-    <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link href="css/styleLogin-registrazione.css" rel="stylesheet" />
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+      
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!------ Include the above in your HEAD tag ---------->
+          
+        <div class="wrapper fadeInDown">
+            <div id="formContent">
+                <!-- Tabs Titles -->
 
-</head>
-<body>
-    <form id="form1" runat="server">
-        <div>
-            <p>Inserisci qui i tuoi dati per effettuare il Login!</p>
-            <table>
-                <tr>
-                    <td>User:</td>
-                    <td>
-                        <asp:TextBox ID="txtUser" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                 <tr>
-                    <td>Password:</td>
-                    <td>
-                        <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
-                    </td>
-                     </tr>
-                <tr>
-                    <td>
-                        <a href="Registrazione.aspx">Registrati</a>
-                    </td>
-                    <td>
-                        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
-                    </td>
-                </tr>
-            </table>
+                <!-- Icon -->
+                <div class="fadeIn first">
+                    <img src="img/img7.jpg" id="icon" alt="User Icon" />
+                </div>
+
+                <!-- Login Form -->
+                <div>
+                    <asp:TextBox ID="txtUser" class="fadeIn second" runat="server" placeholder="user"></asp:TextBox>
+                    <asp:TextBox ID="txtPassword" runat="server" placeholder="password" TextMode="Password" CssClass="fadeIn third"></asp:TextBox>
+                    <asp:Button ID="btnLogin" class="fadeIn fourth" runat="server" Text="LogIn" OnClick="btnLogin_Click" />
+
+               </div>
+
+                <!-- link Regiistrazione -->
+                <div id="formFooter">
+                    <a class="underlineHover" href="Registrazione.aspx">Registrati</a>
+                </div>
+
+            </div>
         </div>
-    </form>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+   
+</asp:Content>
 
-</body>
-</html>
