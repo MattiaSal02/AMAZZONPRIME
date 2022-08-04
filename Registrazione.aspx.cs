@@ -34,7 +34,7 @@ public partial class Registrazione : System.Web.UI.Page
             ScriptManager.RegisterClientScriptBlock(this, GetType(), "Dati non validi", "alert('Dati non validi')", true);
             return;
         }
-        
+
         u.Insert();
 
         txtUserRegistrazione.Text="";
