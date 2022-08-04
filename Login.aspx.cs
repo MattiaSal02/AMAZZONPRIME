@@ -40,6 +40,6 @@ public partial class Login : System.Web.UI.Page
         Session["CodUtente"] = u.RecuperaCodicePersonale();
 
         // Reindirizzamento alla pagina principale
-        Response.Redirect("Home.aspx");
+        Response.Redirect("ListaVideo.aspx");
     }
 }

@@ -3,7 +3,7 @@
 using System;
 using System.Web;
 
-public class DatiUtente : IHttpHandler
+public class DatiUtente : IHttpHandler, System.Web.SessionState.IReadOnlySessionState
 {
 
     public void ProcessRequest(HttpContext context)
