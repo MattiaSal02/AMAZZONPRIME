@@ -98,5 +98,13 @@ public class UTENTI
         CONNESSIONE conn = new CONNESSIONE();
         conn.EseguiCmd(cmd);
     }
+    public void Iscritto()
+    {
+        SqlCommand cmd = new SqlCommand("UTENTI_ISCRITTI");
+        cmd.Parameters.AddWithValue("@codUtente", codUtente);
 
+        CONNESSIONE C = new CONNESSIONE();
+
+        return C.EseguiSelect(cmd);
+    }
 }
