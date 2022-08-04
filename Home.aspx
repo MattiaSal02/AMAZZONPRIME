@@ -13,9 +13,9 @@
             <div class="col-xxl-7">
                 <h2 class="featurette-heading fw-normal lh-1">Watch movies and TV shows</h2>
                 <p class="lead">With Amazon Prime you can watch popular movies and TV shows, including Amazon Originals LOL, The Boys, and The Wilds. Also take advantage of unlimited 1-day shipping on 2 million products at no extra cost and 2-3 day shipping on millions more.</p>
-                <a style="width:250px;" class="btn btn-lg btn-primary" href="#">Prime Member? Sign in</a>
+                <a style="width:250px;" class="btn btn-lg btn-primary" href="Login.aspx">Prime Member? Sign in</a>
                 <p>________________ or  __________________</p>
-                <a style="width:250px;" class="btn btn-lg btn-primary" href="#">Subscribe and use for  <br /> free for 30 days</a>
+                <a style="width:250px;" class="btn btn-lg btn-primary" href="Registrazione.aspx">Subscribe and use for  <br /> free for 30 days</a>
                <hr />
                 <p style="font-size:smaller">Subscribe to Amazon Prime for €36.00/year or €3.99/month. Renew after September 15 for €49.90/year or €4.99/month. Italian subtitles or dubbing available for most titles.</p>
             </div>
@@ -54,7 +54,7 @@
             <div class="col-xxl-7 order-md-2">
                 <h2 class="featurette-heading fw-normal lh-1">Download and go</h2>
                 <p class="lead">Watch offline on the Prime Video app when you download titles to your iPhone, iPad, Tablet, or Android device.</p>
-            <a class="btn btn-lg btn-primary" href="#">Subscribe and use for free for 30 days</a>
+            <a class="btn btn-lg btn-primary" href="Registrazione.aspx">Subscribe and use for free for 30 days</a>
                <hr />
                 <p style="font-size:smaller">Subscribe to Amazon Prime for €36.00/year or €3.99/month. Renew after September 15 for €49.90/year or €4.99/month. Italian subtitles or dubbing available for most titles.</p>
                 </div>
@@ -69,7 +69,7 @@
             <div class="col-xxl-7">
                 <h2 class="featurette-heading fw-normal lh-1">Prime Video Store</h2>
                 <p class="lead">Even more movies, now available to rent or buy—no Prime membership required.</p>
-                 <a class="btn btn-lg btn-primary" href="#">Rent or buy movies</a>
+                 <a class="btn btn-lg btn-primary" href="ListaVideo.aspx">Rent or buy movies</a>
             </div>
             <div class="col-md-5">
                 <img src="img/img5.jpg" style="width: 600px" />
@@ -82,7 +82,7 @@
             <div class="col-xxl-7 order-md-2">
                 <h2 class="featurette-heading fw-normal lh-1">Prime benefits, just for you</h2>
                 <p class="lead">Enjoy 1-day shipping at no extra cost on 2 million products and 2-3 day shipping on millions more, unlimited photo storage on Amazon Drive, early access to Amazon.it Flash Deals, and exclusive in-game content with Twitch Prime.</p>
-            <a class="btn btn-lg btn-primary" href="#">Subscribe and use for free for 30 days</a>
+            <a class="btn btn-lg btn-primary" href="Registrazione.aspx">Subscribe and use for free for 30 days</a>
                <hr />
                 <p style="font-size:smaller">Subscribe to Amazon Prime for €36.00/year or €3.99/month. Renew after September 15 for €49.90/year or €4.99/month. Italian subtitles or dubbing available for most titles.</p>
                 </div>

@@ -16,10 +16,10 @@ public class DatiUtente : IHttpHandler, System.Web.SessionState.IReadOnlySession
             return;
         }
 
-        int codUtente = (int)context.Session["CodUtente"];
+        int codUtente = int.Parse(context.Session["CodUtente"].ToString());
         UTENTI u = new UTENTI();
         u.codUtente = codUtente;
-        string risposta = new UTENTI().SelectOne().Rows[0]["abbonamento"].ToString();
+        string risposta = u.SelectOne().Rows[0]["abbonamento"].ToString();
         context.Response.Write(risposta);
     }
 
