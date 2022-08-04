@@ -7,7 +7,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-public partial class Video : System.Web.UI.Page
+public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
@@ -29,11 +29,8 @@ public partial class Video : System.Web.UI.Page
             string base64String1 = Convert.ToBase64String(arr1, 0, arr1.Length);
             string Src = "data:image/jpg;base64," + base64String1;
 
-            lit.Text += "<img style='width:200px' src='"+Src+"' />";
+            lit.Text += "<img style='width:200px' src='" + Src + "' />";
         }
-
-        
-
     }
 
     protected void btnRicarica_Click(object sender, EventArgs e)
