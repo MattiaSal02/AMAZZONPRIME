@@ -105,6 +105,6 @@ public class UTENTI
 
         CONNESSIONE C = new CONNESSIONE();
 
-        return C.EseguiSelect(cmd);
+        C.EseguiCmd(cmd);
     }
 }
